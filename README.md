@@ -1,21 +1,46 @@
-# IFC → CSV Converter
+IFC to CSV Converter
+This Python tool extracts element data (attributes + properties) from IFC models and exports them to CSV or Excel.
+Created as part of my BIM automation portfolio project to demonstrate skills in IFC data handling, Python scripting, and digital construction workflows.
 
-Python tool to export IFC elements and their data to **CSV**.
+Features
+Supports IFC2x3 and IFC4 models.
 
-## Features
-- Base attributes: GlobalId, Entity, Name, Level
-- Include top-level attributes via `--props`
-- Export all Property Sets (Pset) and Quantities (Qto) as flat columns
-- Filter by IFC classes or `*` for all
+Filter by specific IFC classes (e.g., IfcWall, IfcDoor) or export all.
 
-## Install
-```bash
-python -m venv .venv && . .venv/bin/activate
-pip install ifcopenshell
-```
+Extracts base attributes (GlobalId, Name, Level, Entity) plus all Pset/Qto properties.
 
-## Usage
-```bash
-python ifc_to_csv.py model.ifc
-python ifc_to_csv.py model.ifc -c "*" -o all.csv
-```
+Outputs clean CSV or Excel for further analysis.
+
+Prerequisites
+Python 3.11+
+
+ifcopenshell
+
+pandas (optional, for Excel export)
+
+Install dependencies:
+
+bash
+Kopieren
+Bearbeiten
+pip install -r requirements.txt
+Usage
+bash
+Kopieren
+Bearbeiten
+python ifc_to_csv.py model.ifc -o output.csv
+Optional:
+
+bash
+Kopieren
+Bearbeiten
+python ifc_to_csv.py model.ifc -o output.xlsx
+Example Output
+GlobalId	Entity	Name	Level	Pset_WallCommon:FireRating	Qto_WallBaseQuantities:Length
+2hjlX6f...	IfcWall	Basic 200mm	Level 1	REI60	12.3
+
+Screenshot
+
+Credits
+Author: Rodion Dykhanov
+This project was created as a demonstration of BIM data automation for portfolio and job applications.
