@@ -39,9 +39,5 @@ Example Output
 GlobalId	Entity	Name	Level	Pset_WallCommon:FireRating	Qto_WallBaseQuantities:Length
 2hjlX6f...	IfcWall	Basic 200mm	Level 1	REI60	12.3
 
-Screenshot
-![Uploading image.png…]()
-
-
 Credits
 Author: Rodion Dykhanov
