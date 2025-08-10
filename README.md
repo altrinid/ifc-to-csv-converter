@@ -40,7 +40,8 @@ GlobalId	Entity	Name	Level	Pset_WallCommon:FireRating	Qto_WallBaseQuantities:Len
 2hjlX6f...	IfcWall	Basic 200mm	Level 1	REI60	12.3
 
 Screenshot
+![Uploading image.png…]()
+
 
 Credits
 Author: Rodion Dykhanov
-This project was created as a demonstration of BIM data automation for portfolio and job applications.
