@@ -21,19 +21,16 @@ pandas (optional, for Excel export)
 Install dependencies:
 
 bash
-Kopieren
-Bearbeiten
+
 pip install -r requirements.txt
 Usage
 bash
-Kopieren
-Bearbeiten
+
 python ifc_to_csv.py model.ifc -o output.csv
 Optional:
 
 bash
-Kopieren
-Bearbeiten
+
 python ifc_to_csv.py model.ifc -o output.xlsx
 Example Output
 GlobalId	Entity	Name	Level	Pset_WallCommon:FireRating	Qto_WallBaseQuantities:Length
